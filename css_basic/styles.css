@@ -1,38 +1,65 @@
-/* Make <body> a flex container in column direction */
+/* Make background more appealing */
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; /* full viewport height */
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  color: #333;
   margin: 0;
+  padding: 0;
 }
 
-/* Make <main> a flex container in row direction */
-main {
+/* Style the header */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+}
+
+header ul {
+  list-style: none;
   display: flex;
-  flex-direction: row;
-  flex: auto; /* main grows/shrinks automatically */
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-/* Article takes 2/3 of the width */
-article {
-  flex: 2;
-  overflow-y: auto; /* allows vertical scrolling */
-  padding: 1rem;
-  background-color: #f9f9f9; /* optional styling */
+header li {
+  margin-right: 20px;
 }
 
-/* Aside takes 1/3 of the width */
-aside {
-  flex: 1;
-  overflow-y: auto; /* allows vertical scrolling */
-  padding: 1rem;
-  background-color: #eaeaea; /* optional styling */
+header a {
+  color: #fff;
+  text-decoration: none;
 }
 
-/* Header and footer just sit on top and bottom */
-header, footer {
-  padding: 1rem;
-  background-color: #333;
-  color: white;
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Logo bigger */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #222;
+  color: #fff;
   text-align: center;
+  padding: 10px;
+}
+
+/* Article styling */
+article {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* Aside styling */
+aside {
+  padding: 20px;
+  background: #f1f1f1;
+  border-left: 2px solid #ddd;
 }
